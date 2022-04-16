@@ -105,3 +105,9 @@ button:active {
     width: 200px;
   }
 }
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .public-main {
+    height: auto;
+  }
+}

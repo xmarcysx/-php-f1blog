@@ -9,3 +9,4 @@ App::getRouter()->setLoginRoute('login');
 
 Utils::addRoute('public', 'publicCtrl');//First Page loaded
 Utils::addRoute('login','LoginCtrl'); 
+Utils::addRoute('register','RegisterCtrl'); 

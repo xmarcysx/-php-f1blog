@@ -1,0 +1,42 @@
+{extends file="main.html"} {block name=content}
+<div class="login-container">
+  <div class="login-main">
+    <div class="login-form">
+      <form action="{$conf->action_root}register" method="post">
+        <p class="register-text" style="font-size: 2rem; font-weight: 800">
+          Rejestracja
+        </p>
+        <div class="input-group">
+          <input type="email" placeholder="Email" name="email" />
+        </div>
+
+        <div class="input-group">
+          <input type="text" placeholder="Login" name="login" />
+        </div>
+
+        <div class="input-group">
+          <input type="password" placeholder="Hasło" name="password" />
+        </div>
+
+        <div class="input-group">
+          <input
+            type="password"
+            placeholder="Powtórz hasło"
+            name="password_repeat"
+          />
+        </div>
+
+        <div class="log-btn">
+          <button type="submit">
+            <span class="text">Zarejestruj</span>
+          </button>
+        </div>
+        <p class="login-register-text">
+          Masz konto?
+          <a href="{$conf->action_root}login">Zaloguj się</a>.
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+{/block}

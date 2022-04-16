@@ -5,10 +5,29 @@
       <h1>F1Blog<span>🏎️</span></h1>
     </div>
 
-    <div class="log-btn">
-      <button onclick="location.href='{$conf->action_url}login'" type="button">
-        <span class="text">Logowanie</span>
-      </button>
+    <div class="login-form">
+      <form action="{$conf->action_root}login" method="post">
+        <p class="login-text" style="font-size: 2rem; font-weight: 800">
+          Logowanie
+        </p>
+        <div class="input-group">
+          <input type="text" placeholder="Login" name="login" />
+        </div>
+
+        <div class="input-group">
+          <input type="password" placeholder="Hasło" name="password" />
+        </div>
+
+        <div class="log-btn">
+          <button type="submit">
+            <span class="text">Zaloguj</span>
+          </button>
+        </div>
+        <p class="login-register-text">
+          Nie masz konta?
+          <a href="{$conf->action_root}register">Zarejestruj się</a>.
+        </p>
+      </form>
     </div>
   </div>
 </div>
