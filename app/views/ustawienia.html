@@ -1,0 +1,30 @@
+{extends file="main.html"} {block name=content}
+<div class="navigation">
+  <nav class="nav-items">
+    <div class="logoF1">
+      <h1>F1Blog<span>🏎️</span></h1>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-link">
+        <a href="{$conf->action_root}blog">Blog</a>
+      </li>
+      <li class="nav-link">
+        <a href="{$conf->action_root}artykuly">Artykuły</a>
+      </li>
+      <li class="nav-link selected">
+        <a href="{$conf->action_root}ustawienia">Ustawienia</a>
+      </li>
+      <li class="nav-link"><a href="{$conf->action_root}logout">Wyloguj</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="blog-container">
+  <div class="user-main">
+    <div class="user-info">
+      <h1>Nazwa użytkownika: {$user->username}</h1>
+      <h1>Rola: {$user->role}</h1>
+    </div>
+  </div>
+</div>
+{/block}

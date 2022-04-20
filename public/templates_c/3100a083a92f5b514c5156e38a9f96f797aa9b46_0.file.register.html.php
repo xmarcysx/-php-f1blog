@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-16 14:00:51
+/* Smarty version 4.1.0, created on 2022-04-18 12:58:33
   from 'C:\xampp\htdocs\F1Blog-PHP\app\views\register.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_625aaff3c6f7b5_95667898',
+  'unifunc' => 'content_625d44592f36f8_24960131',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3100a083a92f5b514c5156e38a9f96f797aa9b46' => 
     array (
       0 => 'C:\\xampp\\htdocs\\F1Blog-PHP\\app\\views\\register.html',
-      1 => 1650110437,
+      1 => 1650279495,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_625aaff3c6f7b5_95667898 (Smarty_Internal_Template $_smarty_tpl) {
+function content_625d44592f36f8_24960131 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1759716715625aaff3c6aa48_23931531', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1836029539625d44592ee3b7_80257887', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.html");
 }
 /* {block 'content'} */
-class Block_1759716715625aaff3c6aa48_23931531 extends Smarty_Internal_Block
+class Block_1836029539625d44592ee3b7_80257887 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1759716715625aaff3c6aa48_23931531',
+    0 => 'Block_1836029539625d44592ee3b7_80257887',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -55,7 +55,7 @@ register" method="post">
         </div>
 
         <div class="input-group">
-          <input type="text" placeholder="Login" name="login" />
+          <input type="text" placeholder="Nazwa użytkownika" name="username" />
         </div>
 
         <div class="input-group">

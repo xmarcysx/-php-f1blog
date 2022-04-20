@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-16 13:59:48
+/* Smarty version 4.1.0, created on 2022-04-20 22:49:54
   from 'C:\xampp\htdocs\F1Blog-PHP\app\views\templates\main.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_625aafb4ae9d07_89130256',
+  'unifunc' => 'content_626071f28a3e25_91178228',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e1bbe7b2d76a6264a91e84f59d90c5ced9336cf7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\F1Blog-PHP\\app\\views\\templates\\main.html',
-      1 => 1650110380,
+      1 => 1650487792,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_625aafb4ae9d07_89130256 (Smarty_Internal_Template $_smarty_tpl) {
+function content_626071f28a3e25_91178228 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,7 +31,10 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Marcin Chowaniec" />
-
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
 /main.css" />
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
@@ -40,22 +43,39 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 /login.css" />
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
 /register.css" />
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
+/blog.css" />
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
+/artykuly.css" />
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
+/artykul1.css" />
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
+/ustawienia.css" />
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->styles;?>
+/alertify.css" />
+    <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->scripts;?>
+/alertify.js"><?php echo '</script'; ?>
+>
   </head>
   <body>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_930855146625aafb4ae8992_63225995', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_116660376626071f2895d29_81128002', 'content');
+?>
+ <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_444496948626071f2896a77_14659249', 'alerts');
 ?>
 
   </body>
 </html>
 <?php }
 /* {block 'content'} */
-class Block_930855146625aafb4ae8992_63225995 extends Smarty_Internal_Block
+class Block_116660376626071f2895d29_81128002 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_930855146625aafb4ae8992_63225995',
+    0 => 'Block_116660376626071f2895d29_81128002',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -64,4 +84,51 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'content'} */
+/* {block 'alerts'} */
+class Block_444496948626071f2896a77_14659249 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'alerts' => 
+  array (
+    0 => 'Block_444496948626071f2896a77_14659249',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+ <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>
+    <?php echo '<script'; ?>
+ type="text/javascript">
+      <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getMessages(), 'msg');
+$_smarty_tpl->tpl_vars['msg']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['msg']->value) {
+$_smarty_tpl->tpl_vars['msg']->do_else = false;
+?>
+        alertify.error("<?php echo $_smarty_tpl->tpl_vars['msg']->value->text;?>
+");
+      <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+    <?php echo '</script'; ?>
+>
+    <?php }?> <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isInfo()) {?>
+    <?php echo '<script'; ?>
+ type="text/javascript">
+      <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['msgs']->value->getMessages(), 'msg');
+$_smarty_tpl->tpl_vars['msg']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['msg']->value) {
+$_smarty_tpl->tpl_vars['msg']->do_else = false;
+?>
+      alertify.success("<?php echo $_smarty_tpl->tpl_vars['msg']->value->text;?>
+");
+      <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+    <?php echo '</script'; ?>
+>
+    <?php }?> <?php
+}
+}
+/* {/block 'alerts'} */
 }

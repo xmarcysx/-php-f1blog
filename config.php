@@ -9,9 +9,9 @@ $conf->app_root = '/F1Blog-PHP/public';   # project subfolder in domain (relativ
 # ---- Database config - values required by Medoo
 $conf->db_type = 'mysql';
 $conf->db_server = 'localhost';
-$conf->db_name = '_database_name';
-$conf->db_user = '_user';
-$conf->db_pass = '_password';
+$conf->db_name = 'f1blog';
+$conf->db_user = 'root';
+$conf->db_pass = '';
 $conf->db_charset = 'utf8';
 
 # ---- Database config - optional values
@@ -23,3 +23,4 @@ $conf->db_option = [ PDO::ATTR_CASE => PDO::CASE_NATURAL, PDO::ATTR_ERRMODE => P
 # ---- Assets
 $conf->styles = $conf->app_root.'/assets/css';
 $conf->images = $conf->app_root.'/assets/img';
+$conf->scripts = $conf->app_root.'/assets/js';

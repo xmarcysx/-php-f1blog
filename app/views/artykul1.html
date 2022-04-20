@@ -1,0 +1,66 @@
+{extends file="main.html"} {block name=content}
+<div class="navigation">
+  <nav class="nav-items">
+    <div class="logoF1">
+      <h1>F1Blog<span>🏎️</span></h1>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-link">
+        <a href="{$conf->action_root}blog">Blog</a>
+      </li>
+      <li class="nav-link selected">
+        <a href="{$conf->action_root}artykuly">Artykuły</a>
+      </li>
+      <li class="nav-link">
+        <a href="{$conf->action_root}ustawienia">Ustawienia</a>
+      </li>
+      <li class="nav-link"><a href="{$conf->action_root}logout">Wyloguj</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="blog-container">
+  <div class="artykul1-main">
+    <div class="artykul1-content">
+      <div class="artykul1-img">
+        <img src="{$conf->images}/2021Max.jpg" />
+      </div>
+      <div class="artykul1-text">
+        <h2>Mistrz świata 2021 - Max Vestappen</h2>
+
+        <div class="baza2021">
+          <table>
+            <tr>
+              <td>
+                <b> Grand Prix</b>
+              </td>
+              <td>
+                <b>Zwycięzca</b>
+              </td>
+              <td>
+                <b>Team</b>
+              </td>
+            </tr>
+            {foreach $lista as $wiersz}
+            <tr>
+              <td>{$wiersz["grandPrix"]}</td>
+              <td>{$wiersz["zwyciezca"]}</td>
+              <td>{$wiersz["team"]}</td>
+            </tr>
+            {/foreach}
+          </table>
+        </div>
+
+        <div class="artykul1-p">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil modi
+            nostrum aspernatur, sunt, deserunt maxime fugiat doloribus sapiente
+            soluta dignissimos eveniet dolor itaque perspiciatis hic aut
+            veritatis qui vel. Voluptate.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{/block}

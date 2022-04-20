@@ -1,0 +1,99 @@
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+  list-style: none;
+  width: 80vw;
+  text-align: center;
+  justify-content: right;
+  margin-right: 2rem;
+}
+
+.nav-items .logoF1 {
+  margin: 20px;
+  font-size: 1.5rem;
+  text-shadow: 0 1px 1px #fff;
+  width: 20vw;
+}
+
+.nav-link a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav-link a:hover {
+  background-color: #0413ef;
+  border-radius: 4px;
+  transition: all 0.2 ease-out;
+  color: white;
+}
+
+.selected a {
+  background-color: #0413ef;
+  border-radius: 4px;
+  color: white;
+  left: 0;
+  opacity: 1;
+  transition: all 0.5 ease;
+  z-index: 1;
+}
+
+.blog-main {
+  width: 70vw;
+  min-height: 70vh;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px 30px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60vw;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.blog-content .info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.blog-content .avatar img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.blog-text {
+  margin: 0px 15px 10px 15px;
+}

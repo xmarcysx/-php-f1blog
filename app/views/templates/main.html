@@ -5,13 +5,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Marcin Chowaniec" />
-
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
     <link rel="stylesheet" href="{$conf->styles}/main.css" />
     <link rel="stylesheet" href="{$conf->styles}/public.css" />
     <link rel="stylesheet" href="{$conf->styles}/login.css" />
     <link rel="stylesheet" href="{$conf->styles}/register.css" />
+    <link rel="stylesheet" href="{$conf->styles}/blog.css" />
+    <link rel="stylesheet" href="{$conf->styles}/artykuly.css" />
+    <link rel="stylesheet" href="{$conf->styles}/artykul1.css" />
+    <link rel="stylesheet" href="{$conf->styles}/ustawienia.css" />
+    <link rel="stylesheet" href="{$conf->styles}/alertify.css" />
+    <script type="text/javascript" src="{$conf->scripts}/alertify.js"></script>
   </head>
   <body>
-    {block name=content} Zawartość contentu... {/block}
+    {block name=content} Zawartość contentu... {/block} {block name=alerts} {if
+    $msgs->isError()}
+    <script type="text/javascript">
+      {foreach $msgs->getMessages() as $msg}
+        alertify.error("{$msg->text}");
+      {/foreach}
+    </script>
+    {/if} {if $msgs->isInfo()}
+    <script type="text/javascript">
+      {foreach $msgs->getMessages() as $msg}
+      alertify.success("{$msg->text}");
+      {/foreach}
+    </script>
+    {/if} {/block}
   </body>
 </html>
