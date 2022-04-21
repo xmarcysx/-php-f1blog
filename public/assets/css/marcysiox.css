@@ -1,0 +1,32 @@
+.marcysiox {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin: 0px 20px 20px 20px;
+}
+
+.marcysiox p {
+  font-size: 1.1rem;
+  margin: 0px 20px 20px 20px;
+  padding-bottom: 20px;
+}
+
+.marcysiox h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 10px 20px;
+}
+
+.profile-logo img {
+  width: 80px;
+  margin: 10px;
+}
+
+.profile-username {
+  font-size: 2rem;
+}

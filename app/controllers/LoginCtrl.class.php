@@ -47,11 +47,18 @@ class LoginCtrl {
             'required_message' => 'Hasło jest wymagane',
         ]);
 
-    
-        $user = new User($this->form->username, 'user');
-        // zaipsz obiekt użytkownika w sesji
-        $_SESSION['user'] = serialize($user);
-        RoleUtils::addRole($user->role);
+        if($this->form->username== 'admin'){
+            $user = new User($this->form->username,'admin');
+            // zaipsz obiekt użytkownika w sesji
+            $_SESSION['user'] = serialize($user);
+            RoleUtils::addRole($user->role);
+        }else{
+            $user = new User($this->form->username,'user');
+            // zaipsz obiekt użytkownika w sesji
+            $_SESSION['user'] = serialize($user);
+            RoleUtils::addRole($user->role);
+        }
+
 
 
         if(App::getMessages()->isError()) return false;

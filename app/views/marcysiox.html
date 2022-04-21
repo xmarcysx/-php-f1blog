@@ -5,7 +5,7 @@
       <h1>F1Blog<span>🏎️</span></h1>
     </div>
     <ul class="nav-menu">
-      <li class="nav-link selected">
+      <li class="nav-link">
         <a href="{$conf->action_root}blog"
           >{if $user->username == "admin"}Dodaj Wpis{else}Blog{/if}</a
         >
@@ -23,22 +23,38 @@
 
 <div class="blog-container">
   <div class="blog-main">
-    {if $user->username == "admin"}
-    <div class="dodaj-wpis">DODAJ WPIS I ELO</div>
-    {else} {foreach $lista as $tekstBloga}
+    <div class="marcysiox">
+      <div class="profile">
+        <div class="profile-logo">
+          <img src="{$conf->images}/logo.png" />
+        </div>
+        <div class="profile-username">
+          <h3>Marcysiox</h3>
+        </div>
+      </div>
+
+      <h4>Administrator</h4>
+      <p>
+        Student Uniwersytetu Ślaskiego na kierunku informatyka. Projektant i
+        programista aplikacji webowych. Frontend Developer. W wolnym czasie
+        pasjonat Formuły 1. Prywatnie kibic Maxa Verstappena oraz zespołu
+        RedBull.
+      </p>
+    </div>
+    {foreach $lista as $tekstBloga}
     <div class="blog-content">
       <div class="info">
         <div class="avatar">
           <img src="{$conf->images}/logo.png" />
         </div>
         <div class="blog-username">
-          <h3><a href="{$conf->action_root}marcysiox">Marcysiox</a></h3>
+          <h3><a href="{$conf->action_root}ustawienia">Marcysiox</a></h3>
         </div>
       </div>
 
       <div class="blog-text">{$tekstBloga["tekst"]}</div>
     </div>
-    {/foreach} {/if}
+    {/foreach}
   </div>
 </div>
 {/block}

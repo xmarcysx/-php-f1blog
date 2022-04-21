@@ -18,6 +18,7 @@ class Artykul1Ctrl {
 
 
     public function action_artykul1() {
+        App::getSmarty()->assign('user',unserialize($_SESSION['user']));
 
         $records = App::getDB()->select("sezon2021", "*");
         App::getSmarty()->assign("lista",$records);

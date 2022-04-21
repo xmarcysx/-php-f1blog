@@ -6,7 +6,9 @@
     </div>
     <ul class="nav-menu">
       <li class="nav-link">
-        <a href="{$conf->action_root}blog">Blog</a>
+        <a href="{$conf->action_root}blog"
+          >{if $user->username == "admin"}Dodaj Wpis{else}Blog{/if}</a
+        >
       </li>
       <li class="nav-link">
         <a href="{$conf->action_root}artykuly">Artykuły</a>

@@ -11,7 +11,7 @@ use core\Validator;
 
 
 
-class BlogCtrl {
+class MarcysioxCtrl {
 
     private $records; 
 
@@ -19,11 +19,11 @@ class BlogCtrl {
 		$this->records = new Blog();
 	}
 
-    public function action_blog() {
+    public function action_marcysiox() {
         App::getSmarty()->assign('user',unserialize($_SESSION['user']));
-        $records = App::getDB()->select("blog", "*", ["LIMIT" => 10, "ORDER" => ["idBlog"=>"DESC"]]);
+        $records = App::getDB()->select("blog", "*", ["ORDER" => "idBlog", "ORDER" => ["idBlog"=>"DESC"]]);
         App::getSmarty()->assign("lista",$records);
-        App::getSmarty()->display("blog.html");
+        App::getSmarty()->display("marcysiox.html");
     }
     
 }

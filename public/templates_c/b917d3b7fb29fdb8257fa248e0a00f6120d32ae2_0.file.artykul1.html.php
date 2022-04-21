@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-20 22:40:20
+/* Smarty version 4.1.0, created on 2022-04-21 16:32:31
   from 'C:\xampp\htdocs\F1Blog-PHP\app\views\artykul1.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_62606fb4523913_83263826',
+  'unifunc' => 'content_62616aff75c1b4_73116280',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b917d3b7fb29fdb8257fa248e0a00f6120d32ae2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\F1Blog-PHP\\app\\views\\artykul1.html',
-      1 => 1650487218,
+      1 => 1650551548,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62606fb4523913_83263826 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62616aff75c1b4_73116280 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21265246662606fb45139f1_69517569', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_136782953862616aff745d78_95459658', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.html");
 }
 /* {block 'content'} */
-class Block_21265246662606fb45139f1_69517569 extends Smarty_Internal_Block
+class Block_136782953862616aff745d78_95459658 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_21265246662606fb45139f1_69517569',
+    0 => 'Block_136782953862616aff745d78_95459658',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -50,7 +50,9 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <ul class="nav-menu">
       <li class="nav-link">
         <a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-blog">Blog</a>
+blog"
+          ><?php if ($_smarty_tpl->tpl_vars['user']->value->username == "admin") {?>Dodaj Wpis<?php } else { ?>Blog<?php }?></a
+        >
       </li>
       <li class="nav-link selected">
         <a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
@@ -110,12 +112,441 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
 
         <div class="artykul1-p">
+          <h3>Najlepszy kierowca: Max Verstappen</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021lewismax.jpg" />
+          </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil modi
-            nostrum aspernatur, sunt, deserunt maxime fugiat doloribus sapiente
-            soluta dignissimos eveniet dolor itaque perspiciatis hic aut
-            veritatis qui vel. Voluptate.
+            Podobnie jak rok temu w moim mniemaniu mistrz świata był zarazem
+            najlepszym zawodnikiem sezonu. Okej, w sezonie 2020 Lewis Hamilton
+            nie miał za bardzo konkurencji pod tym względem, czego nie można
+            powiedzieć o Holendrze, którego do 58. okrążenia wyścigu w Abu Zabi
+            podgryzał... Hamilton. Ba, to nawet Brytyjczyk był bliżej sięgnięcia
+            po kolejny tytuł w karierze, ale przez decyzje niektórych osób (w
+            zasadzie jednej), o których już wiele powiedziano i napisano, nie
+            było mu dane tego uczynić.
           </p>
+          <p>
+            Dlaczego więc mój wybór padł na Verstappena? Dla mnie kluczowa jest
+            jedna statystyka - ilość niewymuszonych błędów. Holender na tym polu
+            był lepszy od Hamiltona, choć to ten drugi ma na karku prawie 37 lat
+            i przejechanych 290 wyścigów. Z większych jego pomyłek można wskazać
+            szerokie wyjazdy w czasówkach na Imoli i w Portimao, żółte flagi w
+            Katarze i uderzenie w ścianę w Dżuddzie, do którego jechał
+            rewelacyjne okrążenie.
+          </p>
+          <p>
+            U Hamiltona lista takich błędów jest znacznie dłuższa, a rozpoczyna
+            ją pamiętne dublowanie na Imoli z George'em Russellem (tak, z jego
+            zespołowym partnerem w sezonie 2022). Potem oczywiście bardzo słaby
+            weekend w Monako, sugerując się słowami Toto Wolffa - "błąd palca"
+            podczas restartu w Baku, Styria i uszkodzenia na tarkach, samotny
+            restart na Węgrzech czy sprawdzanie twardości barierek w Rosji.
+          </p>
+          <p>
+            Poza tym u zawodnika Red Bulla trzeba docenić jego niebywałą
+            konsekwencję, jaką cechował się na przestrzeni sezonu. W
+            kwalifikacjach plasował się tylko w czołowej trójce (wyjątek
+            naturalnie Rosja), a w wyścigach - jeżeli nie przydarzały mu się
+            dziwne przygody - zawsze dojeżdżał do mety albo 1., albo 2. Ma to
+            swoje odzwierciedlenie także w księdze rekordów F1, gdzie pobił
+            wyczyn Michaela Schumachera, Sebastiana Vettela i Hamiltona w ilości
+            podiów w jednym roku (18). Liczba okrążeń spędzonych na prowadzeniu
+            też robi swoje (652).
+          </p>
+          <p>
+            Verstappena nietrudno pochwalić również za dojrzałość i opanowanie w
+            najważniejszych momentach (z pewnymi wyjątkami typu GP Arabii
+            Saudyjskiej), a należy pamiętać, że to właśnie te elementy były jego
+            największą piętą achillesową w poprzednich latach. Nie bawił się
+            również w żadne gierki psychologiczne, co w bezpośredniej
+            rywalizacji z Hamiltonem nie zdarza się zbyt często (może nam o tym
+            coś opowiedzieć Nico Rosberg).
+          </p>
+          <p>
+            Nie będę rozwodzić się nad tym, kto, gdzie i kiedy dysponował
+            lepszym sprzętem, bo nie o to chodzi w tej całej zabawie. 24-latek
+            oraz 36-latek byli zdecydowanie najlepszymi kierowcami sezonu 2021,
+            o czym najlepiej świadczy przepaść punktowa w klasyfikacji nad
+            konkurencją. Niemniej jednak, w moim odczuciu to "Super Max" swoją
+            tegoroczną postawą zrobił na mnie większe wrażenie. Zresztą podobne
+            zdanie w tej kwestii mają sami szefowie zespołów.
+          </p>
+          <h3>Najlepszy zespół: Ferrari</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021ferrari.jpg" />
+          </div>
+          <p>
+            Wiem. Wybór dość kontrowersyjny, gdyż wszyscy (zapewne) spodziewali
+            się Mercedesa. Już spieszę z odpowiednimi argumentami, ale najpierw
+            chcę krótko wytłumaczyć, dlaczego nie wybrałem ośmiokrotnych
+            mistrzów świata konstruktorów.
+          </p>
+          <p>
+            Powód jest prosty - stajnia z Brackley po prostu "olała" sezon 2021
+            i stąd wynikały jej problemy, zwłaszcza z początku sezonu, kiedy
+            Hamilton i Bottas często ćwiczyli piruety synchroniczne, walcząc z
+            maszyną W12. Na większe poprawki było już za późno, więc pozostało
+            tylko lepsze zrozumienie pakietu i podkręcenie silnika na ostatnie
+            rundy sezonu. Ostatecznie tytuł udało się obronić, aczkolwiek
+            wcześniejsze przeniesienie zasobów na kampanię 2022 było jak igranie
+            z ogniem. Zobaczymy, czy taka taktyka się opłaci (sądząc po
+            grudniowym nagraniu z odpalenia bolidu W13, raczej tak).
+          </p>
+          <p>
+            Wracając do Maranello. Oczywiście Włosi również dość szybko
+            przestali rozwijać tegoroczną maszynę, ale ich pragnę jednak docenić
+            za postęp, jaki poczynili w porównaniu z sezonem 2020. Tamten rok,
+            najgorszy od 40 lat, był kompletną katastrofą, o czym najlepiej
+            świadczyła "zaciekła" rywalizacja z Haasem czy Alfą Romeo.
+          </p>
+          <p>
+            W minionej kampanii było zdecydowanie lepiej. Przede wszystkim
+            konstrukcja SF21 słuchała się Charlesa Leclerca i Carlosa Sainza, a
+            na prostych nie traciła już tyle do konkurencji. Stratedzy również
+            unikali większych wpadek (wyjątek - Monako, ale to bardziej wpadka
+            mechaników). Kwasów między kierowcami także nie było, a to
+            przełożyło się na dobre relacje w zespole.
+          </p>
+          <p>
+            Efekt? 2 pole position, 5 podiów i 3. miejsce w klasyfikacji
+            konstruktorów, na dodatek wywalczone po bardzo interesującej walce z
+            McLarenem. Kluczowym momentem w tej batalii była niewątpliwie
+            decyzja o wprowadzeniu nowych układów hybrydowych do włoskich
+            jednostek napędowych, dzięki czemu samochody oznaczone numerami 16
+            oraz 55 zyskały trochę KM w końcówce sezonu. Brytyjczycy nie byli
+            już w stanie na to odpowiedzieć i musieli zadowolić się 4. lokatą.
+          </p>
+          <p>
+            Tifosi zastanawiają się teraz, czy w sezonie 2022, kiedy pojawią się
+            nowe bolidy, Ferrari powróci do wygrywania. Na odpowiedź przyjdzie
+            jeszcze trochę poczekać, natomiast doniesienia medialne z Włoch, a
+            także wypowiedzi Mattii Binotto i innych ekspertów napawają
+            optymizmem.
+          </p>
+          <h3>Największe rozczarowanie (kierowca): Daniel Ricciardo</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021riciardo.jpg" />
+          </div>
+          <p>
+            Niestety. Dla mnie to właśnie uśmiechnięty Australijczyk był
+            największym zawodem tego sezonu. Fani kierowcy z Perth z pewnością
+            dużo sobie obiecywali po jego przeprowadzce z Enstone do Woking,
+            choćby dlatego, że brytyjska maszyna pozwalała na więcej niż ta
+            francuska w sezonie 2020.
+          </p>
+          <p>
+            Taki stan rzeczy potwierdził się także w kampanii 2021, o czym
+            doskonale świadczyły wyniki Lando Norrisa i osiągi McLarena na
+            prostych. Brytyjczyk długo utrzymywał się nawet na 3. pozycji w
+            klasyfikacji kierowców, wyprzedzając Bottasa z Mercedesa i Pereza z
+            Red Bulla.
+          </p>
+          <p>
+            Z kolei Daniel ciągle przeplatywał słabe występy z solidnymi, ale to
+            tych pierwszych było więcej. Australijczykowi zdarzało się nawet
+            odpadać na etapie Q1, a w niedzielnych zawodach często rozpaczliwie
+            walczył o drobne punkty.
+          </p>
+          <p>
+            Swoją rolę odegrała naturalnie mała liczba testów z nową maszyną i
+            silnikiem czy znakomita forma Norrisa. Jednakże na przestrzeni
+            całego roku można było odnieść takie wrażenie, że 32-latek sam nie
+            do końca wie, co jest źródłem jego problemów. Wielokrotnie mówił o
+            tym w różnych wywiadach.
+          </p>
+          <p>
+            Sezon Ricciardo uratował tak naprawdę triumf na Monzy, gdzie w stu
+            procentach wykorzystał potencjał konstrukcji MCL35M i szansę, którą
+            stworzyli mu Verstappen i Hamilton swoim wypadkiem. "Dany" okrasił
+            to jeszcze punktem za najszybsze okrążenie. Niestety, poza tym
+            ciężko doszukać się większych pozytywów, jeśli chodzi o jego
+            tegoroczną postawę.
+          </p>
+          <h3>Największe rozczarowanie (zespół): Aston Martin</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021aston.jpg" />
+          </div>
+          <p>
+            Tutaj nikt nie powinien mieć większych wątpliwości. Biorąc pod uwagę
+            zasoby brytyjskiej stajni, przedsezonowe zapowiedzi, a także
+            dyspozycję z 2020 roku, to oni musieli wygrać tę kategorię. Haasa
+            nie można raczej wziąć pod uwagę (całkowite skupienie się na sezonie
+            2022), a Alpine obudziło się w samej końcówce sezonu.
+          </p>
+          <p>
+            W Silverstone musiało pójść coś nie tak. Najprawdopodobniej
+            Lawrence'owi Strollowi czkawką odbiło się po prostu skopiowanie
+            zeszłorocznego samochodu Mercedesa. W tym roku pomysł ten nie
+            wypalił z jednego powodu - niemiecki low rake nie był dobrym
+            rozwiązaniem na zmiany w przepisach technicznych dotyczących
+            podłogi.
+          </p>
+          <p>
+            "Srebrne Strzały" poradziły sobie jakoś z tym problemem, czego nie
+            można powiedzieć o Astonie Martinie. Brytyjczycy cierpieli więc od
+            początku roku, a sfrustrowany papa Stroll rozważał nawet wejście na
+            drogę sądową. Nic z tego jednak nie wyszło i Brytyjczycy musieli
+            zadowolić się rywalizacją w okolicach połowy stawki.
+          </p>
+          <p>
+            Poza tym nie uniknęli też różnych wpadek. Takową była ta z GP
+            Węgier, gdy zabrano miejsce na podium Sebastianowi Vettelowi z
+            powodu niewystarczającej ilości paliwa. Jak się później okazało,
+            wszystko przez błędne polecenia inżynierów, którzy kazali Niemcowi
+            zużyć więcej benzyny. Potem zabrakło jej na kontroli FIA.
+          </p>
+          <p>
+            Co do czterokrotnego mistrza świata - myślę, że to on najbardziej
+            ucierpiał na słabiej formie Astona. Chciał się odbudować po
+            nieudanym epizodzie w Ferrari i mimo iż wyciskał siódme poty ze
+            swojej maszyny, co przełożyło się na dwa (no dobra jedno) podia, był
+            w stanie zająć dopiero 12. miejsce w zestawieniu kierowców. Udało
+            pokonać się mu młodego Strolla, o którym chyba najmniej mówiło się
+            spośród wszystkich zawodników w tym sezonie.
+          </p>
+          <h3>Największe pozytywne zaskoczenie: Carlos Sainz</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021sainz.jpg" />
+          </div>
+          <p>
+            Przyznam szczerze, że gdy Ferrari potwierdziło zaangażowanie
+            madrytczyka, nie byłem przekonany do tego wyboru. Owszem forma
+            Hiszpana w McLarenie naprawdę robiła wrażenie, ale kiedy miałbym do
+            wyboru jego bądź Ricciardo, raczej postawiłbym na tego drugiego.
+            Może dlatego piszę właśnie to podsumowanie zamiast przygotowywać się
+            w Maranello do sezonu 2022?
+          </p>
+          <p>
+            Przyznam szczerze, że gdy Ferrari potwierdziło zaangażowanie
+            madrytczyka, nie byłem przekonany do tego wyboru. Owszem forma
+            Hiszpana w McLarenie naprawdę robiła wrażenie, ale kiedy miałbym do
+            wyboru jego bądź Ricciardo, raczej postawiłbym na tego drugiego.
+            Może dlatego piszę właśnie to podsumowanie zamiast przygotowywać się
+            w Maranello do sezonu 2022?
+          </p>
+          <p>
+            Czterokrotnie meldował się na podium, świetnie spisywał się w
+            czasówkach, a co najważniejsze i z pewnością to, co wielu kibiców
+            zaskoczyło - pokonał Charlesa Leclerca w klasyfikacji kierowców.
+            Jego tempo wyścigowe, agresja i inteligencja (sprint w Sao Paulo -
+            przepuszczenie Verstappena i skuteczna obrona przez Perezem) również
+            powinno podobać się Tifosi i włoskim inżynierom. Nic więc dziwnego,
+            że już w mediach pojawiają się sugestie o tym, że Ferrari chce
+            przedłużyć z nim kontrakt na kolejne lata.
+          </p>
+          <h3>Najlepszy debiutant (powrót): Fernando Alonso</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021alonso.jpg" />
+          </div>
+          <p>
+            Powiedzmy sobie szczerze, żaden z tegorocznych debiutantów nie
+            zaimponował niczym szczególnym. Zanim Yuki Tsunoda się ogarnął,
+            sezon już minął, Mick Schumacher poza okazjonalnymi wystrzałami
+            formy też nie przekonywał swoją postawą, a Nikita Mazepin... no
+            cóż... jak mawiał klasyk - "jest jak jest".
+          </p>
+          <p>
+            Wobec tego postanowiłem wyróżnić dwukrotnego mistrza świata, który
+            powrócił do naszego ukochanego sportu po dwuletniej absencji. Wrócił
+            z przytupem, bowiem w czasówce w Bahrajnie od razu awansował do Q3.
+            Później spotkał go lekki dołek formy, ale ogólnie sezon 2021 był dla
+            niego jednym z lepszych w karierze.
+          </p>
+          <p>
+            Fernando potwierdził, że nie zapomniał, jak ściga się na najwyższym
+            poziomie. Swoją postawą na torze i poza nim niejednokrotnie
+            zachwycał. Napsuł też trochę krwi dwóm konkurentom walczącym o tytuł
+            (Verstappenowi w Rosji, Hamiltonowi na Węgrzech). Zwieńczeniem jego
+            dobrego roku było podium wywalczone w Katarze, gdzie kapitalnie
+            zarządzał oponami.
+          </p>
+          <p>
+            Widać wyraźnie, że Alonso wyciągnął wnioski z epizodu w McLarenie,
+            który nauczył go pokory. Hiszpan nie krytykował swojego zespołu,
+            bolidu, silnika czy rywali, a poza torem świetnie dogadywał się z
+            Estebanem Oconem, dzięki czemu ich duet był najrówniejszy w
+            tegorocznej rywalizacji.
+          </p>
+          <p>
+            Teraz na Hiszpana czeka nowe wyzwanie, jakim będzie nowa generacja
+            samochodów. Zobaczymy, jak odnajdzie się w tym wszystkim Alpine.
+            "Nando" przez cały sezon powtarzał, że jego ekipa koncentruje się
+            innowacyjnych przepisach, co może być dobrym prognostykiem.
+          </p>
+          <h3>Najlepszy wyścig: GP Węgier</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021wegry.jpg" />
+          </div>
+          <p>
+            Sezon 2021 przyniósł wiele ekscytujących i trzymającym w napięciu
+            wyścigów. Głównie za sprawą potyczek Verstappena oraz Hamiltona, a
+            także częstego deszczu. Jednakże to węgierska runda była - jak dla
+            mnie - najlepsza.
+          </p>
+          <p>
+            Wszystko zaczęło się od zabawy w kręgle na starcie, którą urządzili
+            sobie Valtteri Bottas i Lance Stroll. Skutkowała ona zatrzymaniem
+            sesji, po czym nastąpił najbardziej kuriozalny start w historii F1.
+            Startujący z pole position Hamilton utrzymał swoje prowadzenie,
+            ponieważ reszta rywali... zjechała do alei serwisowej w celu
+            założenia opon slick.
+          </p>
+          <p>
+            Sytuacja ta wywróciła stawkę do góry nogami, a na 2. miejscu znalazł
+            się przez chwilę George Russell. Musiał jednak oddać tę pozycję, w
+            wyniku czego to Esteban Ocon i Sebastian Vettel stoczyli ze sobą
+            pojedynek o triumf w wyścigu (Francuz i tak wygrałby, bo Niemca
+            zdyskwalifikowano).
+          </p>
+          <p>
+            Z tyłu stawki również działo się wiele. Siedmiokrotny mistrz świata
+            rozpoczął szaloną pogoń, którą skutecznie wstrzymał Fernando Alonso
+            swoimi znakomitymi obronami. Ostatecznie Brytyjczyk uporał się z
+            nim, ale nie zdołał już dogonić Ocona. Dzięki temu ekipa z Enstone
+            odniosła pierwsze zwycięstwo po powrocie do sportu.
+          </p>
+          <p>
+            Walki w środku stawki również nie brakowało, a emocji fanom
+            dostarczali m.in. Russell i Latifi, którzy dowieźli pierwsze punkty
+            dla Williamsa od pamiętnego GP Niemiec 2019 (wiemy dobrze, kto
+            wówczas dokonał tej sztuki). Max Verstappen także robił, co mógł,
+            ale ścigając się z połową samochodu, był w stanie przebić się tylko
+            na 9. pozycję.
+          </p>
+          <p>
+            Nawet Mick Schumacher odegrał swoją rolę w tych zawodach, albowiem
+            przez dłuższy czas tworzył pociąg bolidów, w skład którego wchodzili
+            Verstappen, Hamilton czy Ricciardo. AlphaTauri także zaprezentowało
+            się z dobrej strony (Gasly odebrał fastest lap Hamiltonowi). Tego
+            samego nie można było powiedzieć o Alfie Romeo, dla której zawody w
+            Budapeszcie były w pewnym sensie podsumowaniem ich sezonu (błędy
+            strategiczne, kary dla obu kierowców).
+          </p>
+          <h3>Najnudniejszy wyścig: GP Monako</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021monaco.jpg" />
+          </div>
+          <p>
+            Czekajcie? Jak to Monako? Przecież w kalendarzu było Paul Ricard i
+            Yas Marina. No niestety, monakijska runda była zdecydowanie tą
+            najnudniejszą i nawet jej prestiż tego nie przysłonił.
+          </p>
+          <p>
+            Co tu dużo pisać. Kompletne nudy. Wszyscy niecierpliwie czekali na
+            zjazdy do boksu, a gdy przyszedł czas na czołówkę, nakrętka w
+            bolidzie Bottasa odmówiła posłuszeństwa. Nic więc już nie mogło
+            przeszkodzić Verstappenowi w odniesieniu zwycięstwa, mimo iż Sainz
+            cały czas naciskał. Może gdyby do zmagań ruszył Leclerc, byłoby
+            inaczej, ale o swoim istnieniu musieli przypomnieć włoscy mechanicy.
+          </p>
+          <p>
+            Najbardziej emocjonującymi chwilami wyścigu były chyba narzekania
+            Lewisa Hamiltona przez radio, który nie mógł zrozumieć, jak to się
+            stało, że Sergio Perez znalazł się przed nim.
+          </p>
+          <p>
+            A bym zapomniał. Był jeden ciekawszy moment. Walka Sebastiana
+            Vettela i Pierre'a Gasly'ego na wyjeździe z boksu. Nie było nam dane
+            jednak jej do końca obejrzeć, gdyż realizatorzy woleli w tym czasie
+            pokazywać "popisy" Lance'a Strolla w sekcji basenowej.
+          </p>
+          <p>
+            PS. z wiadomych względów nie uwzględniłem "pasjonujących"
+            belgijskich zawodów.
+          </p>
+          <h3>Największy wygrany: F1 jako sport</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021sport.jpg" />
+          </div>
+          <p>
+            Drugi rok z rzędu moim zdaniem to właśnie królowa motorsportu była
+            największym wygranym. I nie chodzi wcale o covida, z którym
+            mistrzowska seria potrafi sobie doskonale radzić. W sezonie 2021, po
+            tylu latach absolutnej hegemonii Mercedesa, jak manny z nieba kibice
+            doczekali się prawdziwej batalii o mistrzostwo świata i to nie tylko
+            w klasyfikacji kierowców.
+          </p>
+          <p>
+            Red Bull odpowiednio przygotował się do sezonu i wykorzystał szansę,
+            jaką podarowali im sami Niemcy, przerzucając większość zasobów na
+            kampanię 2022. Zgodnie z zapowiedziami Christiana Hornera, stworzyli
+            "wszechstronny" samochód, co pozwoliło Verstappenowi na rzucenie
+            rękawicy w stronę Hamiltona.
+          </p>
+          <p>
+            Dzięki temu mogliśmy oglądać tak niesamowity spektakl na torze. Poza
+            nim o odpowiednie emocje dbali Marko, Horner, Jos Verstappen, a z
+            przeciwnego obozu Wolff i Hamilton. Okej, nieraz ich słowne potyczki
+            wykraczały poza dozwolone granice, ale czy to właśnie nie o to
+            chodzi w F1? Ciągłe szukanie nieprawidłowości w bolidzie rywala,
+            wbijanie szpileczek czy pielgrzymki do pokoi FIA.
+          </p>
+          <p>
+            Holender oraz Brytyjczyk również nie zawodzili nas, wielokrotnie
+            tocząc ze sobą bezpośrednie boje. Niektóre z nich kończyły się w
+            żwirze, inne w barierce, aczkolwiek najważniejsze było to, że niemal
+            w każdym wyścigu rywalizowali oni koło w koło.
+          </p>
+          <p>
+            Los uśmiechnął się więc do Stefano Domenicaliego i spółki, bo
+            zainteresowanie oraz przychody całego sportu musiały wzrosnąć (i to
+            bez pomocy Netlixa i sprintów kwalifikacyjnych). F1 swoje apogeum
+            osiągnęła raczej na pewno podczas weekendu w Abu Zabi, do którego
+            dwaj najwięksi protagoniści przystępowali z takim samym dorobkiem
+            punktowym. A scenariusza tej niedzielnej rywalizacji nikt nie mógł
+            lepiej wymyślić. O tytule zadecydowało bowiem ostatnie okrążenie.
+          </p>
+          <h3>Najwięksi przegrani: FIA i Michael Masi</h3>
+          <div class="artykul1-p-images">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->images;?>
+/2021masi.jpg" />
+          </div>
+          <p>
+            No cóż. Delikatnie rzecz ujmując - nie był to najlepszy rok dla
+            Międzynarodowej Federacji Samochodowej. Od pierwszego wyścigu nie
+            brakowało olbrzymich kontrowersji, a wszystko potęgowały kolejne
+            wytyczne Michaela Masiego i dyrektywy techniczne.
+          </p>
+          <p>
+            Problemy z limitami toru, podwójna farsa z elastycznymi tylnymi
+            skrzydłami, wskazówki ws. pit-stopów i ciśnień w oponach, brak
+            konsekwencji sędziów, GP Belgii, negocjacje z zespołami oraz
+            oczywiście niezrozumiałe decyzje z finałowych okrążeń GP Abu Zabi.
+          </p>
+          <p>
+            Wszystko zeszło na barki dyrektora wyścigu, ale przecież to nie jego
+            wina, że w 2019 roku został rzucony na tak głęboką wodę. Niemniej
+            jednak, przez ten czas powinien już trochę okrzepnąć w tej roli, a
+            wydarzenia z końcówki sezonu, gdy notorycznie ulegał presji ze
+            strony Red Bulla czy Mercedesa, na to nie wskazywały.
+          </p>
+          <p>
+            Pytanie, czy FIA zamierza wyciągnąć wnioski z tegorocznych wpadek?
+            Czy czyjeś głowy polecą? Wątpię, natomiast królowa motorsportu, na
+            czele z Rossem Brawnem, na pewno nie pozwoli sobie na kolejne takie
+            niedociągnięcia i ogromną krytykę ze strony kierowców, zespołów czy
+            kibiców.
+          </p>
+          <p>
+            Być może w tej kwestii zrobi coś świeżo upieczony prezes Federacji,
+            który zastąpił Jeana Todta. Zapowiedział już, że przyjrzy się
+            wszystkim tym kontrowersjom. Wiemy dobrze jednak, że łatwo
+            powiedzieć, trudno zrobić. Zobaczymy, co z tego wszystkiego
+            wyniknie. Miejmy nadzieję, iż rozpoczynająca się w przyszłym roku
+            nowa era regulacyjna dostarczy jeszcze więcej emocji niż sezon 2021.
+            A na razie przyszła pora na intensywne przygotowania.
+          </p>
+          <br />
         </div>
       </div>
     </div>

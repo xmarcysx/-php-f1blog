@@ -46,6 +46,18 @@
   padding: 20px;
 }
 
+.artykul1-p h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .artykul1-p p {
   margin: 0 20px 10px 20px;
+  text-align: justify;
+}
+
+.artykul1-p-images img {
+  width: 400px;
+  margin: 5px;
+  border-radius: 10px;
 }
