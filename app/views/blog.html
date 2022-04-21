@@ -24,7 +24,23 @@
 <div class="blog-container">
   <div class="blog-main">
     {if $user->username == "admin"}
-    <div class="dodaj-wpis">DODAJ WPIS I ELO</div>
+    <div class="dodaj-wpis">
+      <form action="{$conf->action_root}blog" method="post">
+        <div class="input-wpis">
+          <textarea
+            placeholder="Napisz o czym chcesz poinformować fanów..."
+            cols="25"
+            rows="10"
+            name="wpis"
+          ></textarea>
+        </div>
+        <div class="log-btn">
+          <button type="submit">
+            <span class="text">Dodaj wpis</span>
+          </button>
+        </div>
+      </form>
+    </div>
     {else} {foreach $lista as $tekstBloga}
     <div class="blog-content">
       <div class="info">
