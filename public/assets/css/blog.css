@@ -135,7 +135,7 @@
   font-size: 1rem;
   resize: none;
   border-radius: 10px;
-  border: none;
+  border: 2px solid black;
   padding: 10px;
 }
 
@@ -144,9 +144,73 @@
   outline: none;
 }
 
-/* Modern Browsers */
 .input-wpis textarea::placeholder {
   text-align: left;
   font-size: 1rem;
   color: #9c9c9c;
+}
+
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.fa-times {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-items {
+    height: 300px;
+    flex-direction: column;
+    z-index: 99;
+  }
+
+  .nav-menu {
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    margin-right: 0rem;
+  }
+
+  .nav-items .logoF1 {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .blog-main {
+    width: 90vw;
+  }
+
+  .blog-content {
+    width: 80vw;
+  }
+
+  /* ADMIN PANEL */
+
+  .dodaj-wpis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80vw;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .input-wpis textarea {
+    margin-top: 20px;
+    width: 70vw;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+  }
 }

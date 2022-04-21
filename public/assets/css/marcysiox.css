@@ -30,3 +30,9 @@
 .profile-username {
   font-size: 2rem;
 }
+
+@media screen and (max-width: 900px) {
+  .marcysiox h3 {
+    font-size: 1.8rem;
+  }
+}

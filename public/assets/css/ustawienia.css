@@ -32,3 +32,13 @@
   padding-bottom: 10px;
   padding-top: 10px;
 }
+
+@media screen and (max-width: 900px) {
+  .user-main {
+    width: 90vw;
+  }
+
+  .user-info {
+    width: 70vw;
+  }
+}

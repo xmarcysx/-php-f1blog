@@ -31,3 +31,17 @@
 .artykul-text h3 {
   margin: 0px 5px 10px 5px;
 }
+
+@media screen and (max-width: 900px) {
+  .artykul-main {
+    width: 90vw;
+  }
+
+  .artykul-content {
+    width: 70vw;
+  }
+
+  .artykul-img img {
+    width: 50vw;
+  }
+}

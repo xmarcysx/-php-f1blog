@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-21 17:54:20
+/* Smarty version 4.1.0, created on 2022-04-21 18:27:57
   from 'C:\xampp\htdocs\F1Blog-PHP\app\views\blog.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_62617e2c231c91_47182407',
+  'unifunc' => 'content_6261860d5b9a61_84115257',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e7d23848633629e27e9ee54b571b9866bfed20cc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\F1Blog-PHP\\app\\views\\blog.html',
-      1 => 1650556459,
+      1 => 1650558476,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62617e2c231c91_47182407 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6261860d5b9a61_84115257 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_128828433262617e2c220881_84857773', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18276993696261860d59e7e4_27541609', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.html");
 }
 /* {block 'content'} */
-class Block_128828433262617e2c220881_84857773 extends Smarty_Internal_Block
+class Block_18276993696261860d59e7e4_27541609 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_128828433262617e2c220881_84857773',
+    0 => 'Block_18276993696261860d59e7e4_27541609',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,6 +65,9 @@ ustawienia">Ustawienia</a>
       <li class="nav-link"><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
 logout">Wyloguj</a></li>
     </ul>
+    <div class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
 </div>
 

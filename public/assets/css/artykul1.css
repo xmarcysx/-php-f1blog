@@ -61,3 +61,29 @@
   margin: 5px;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 900px) {
+  .artykul1-main {
+    width: 90vw;
+  }
+
+  .artykul1-content {
+    width: 80vw;
+  }
+
+  .artykul1-img img {
+    width: 70vw;
+  }
+
+  .artykul1-text h2 {
+    margin: 0px 5px 10px 5px;
+  }
+
+  .baza2021 table {
+    width: 60vw;
+  }
+
+  .artykul1-p-images img {
+    width: 60vw;
+  }
+}
