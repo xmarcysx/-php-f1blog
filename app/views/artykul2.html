@@ -1,0 +1,80 @@
+{extends file="main.html"} {block name=content}
+<div class="navigation">
+  <nav class="nav-items">
+    <div class="logoF1">
+      <h1>F1Blog<span>🏎️</span></h1>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-link">
+        <a href="{$conf->action_root}blog"
+          >{if $user->username == "admin"}Dodaj Wpis{else}Blog{/if}</a
+        >
+      </li>
+      <li class="nav-link selected">
+        <a href="{$conf->action_root}artykuly">Artykuły</a>
+      </li>
+      <li class="nav-link">
+        <a href="{$conf->action_root}ustawienia">Ustawienia</a>
+      </li>
+      <li class="nav-link"><a href="{$conf->action_root}logout">Wyloguj</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="blog-container">
+  <div class="artykul1-main">
+    <div class="artykul1-content">
+      <div class="artykul1-img">
+        <img src="{$conf->images}/wyniki2022.jpg" />
+      </div>
+      <div class="artykul1-text">
+        <h2>Wyniki sezonu 2022</h2>
+
+        <div class="baza2021">
+          <table>
+            <tr>
+              <td>
+                <b> Grand Prix</b>
+              </td>
+              <td>
+                <b>Zwycięzca</b>
+              </td>
+              <td>
+                <b>Team</b>
+              </td>
+            </tr>
+            {foreach $lista as $wiersz}
+            <tr>
+              <td>{$wiersz["grandPrix"]}</td>
+              <td>{$wiersz["zwyciezca"]}</td>
+              <td>{$wiersz["team"]}</td>
+            </tr>
+            {/foreach}
+          </table>
+        </div>
+
+        {if $user->username == "admin"}
+        <div class="dodaj-2022">
+          <form action="{$conf->action_root}artykul2" method="post">
+            <div class="input-2022">
+              <input type="text" placeholder="Grand Prix" name="grandPrix" />
+            </div>
+            <div class="input-2022">
+              <input type="text" placeholder="Zwycięzca" name="zwyciezca" />
+            </div>
+            <div class="input-2022">
+              <input type="text" placeholder="Team" name="team" />
+            </div>
+            <div class="log-btn">
+              <button type="submit">
+                <span class="text">Dodaj</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        {/if}
+      </div>
+    </div>
+  </div>
+</div>
+{/block}

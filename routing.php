@@ -15,4 +15,5 @@ Utils::addRoute('marcysiox','MarcysioxCtrl');
 Utils::addRoute('ustawienia','UstawieniaCtrl'); 
 Utils::addRoute('artykuly','ArtykulyCtrl'); 
 Utils::addRoute('artykul1','Artykul1Ctrl'); 
+Utils::addRoute('artykul2','Artykul2Ctrl'); 
 
