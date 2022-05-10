@@ -54,7 +54,26 @@
 
       <div class="blog-text">{$tekstBloga["tekst"]}</div>
     </div>
-    {/foreach}
+    {/foreach} {if $previous_page > 0}
+    <a
+      type="button"
+      class="pervious"
+      href="{$conf->action_root}marcysiox/{$previous_page}"
+      >‹</a
+    >
+    {/if} {if $isNextPage}
+    <a
+      type="button"
+      class="next"
+      href="{$conf->action_root}marcysiox/{$next_page}"
+      >›</a
+    >
+    {/if}
   </div>
 </div>
+<script>
+  $(document).ready(function () {
+    $("#usersValues").DataTable();
+  });
+</script>
 {/block}

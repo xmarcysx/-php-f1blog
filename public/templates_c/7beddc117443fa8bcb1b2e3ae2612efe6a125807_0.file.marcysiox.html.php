@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-21 17:15:01
+/* Smarty version 4.1.0, created on 2022-05-10 21:06:50
   from 'C:\xampp\htdocs\F1Blog-PHP\app\views\marcysiox.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_626174f5553c43_07141438',
+  'unifunc' => 'content_627ab7cacb89a2_98880848',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7beddc117443fa8bcb1b2e3ae2612efe6a125807' => 
     array (
       0 => 'C:\\xampp\\htdocs\\F1Blog-PHP\\app\\views\\marcysiox.html',
-      1 => 1650554099,
+      1 => 1652209609,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_626174f5553c43_07141438 (Smarty_Internal_Template $_smarty_tpl) {
+function content_627ab7cacb89a2_98880848 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_729713467626174f53b5ee9_40464606', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1467467247627ab7cac9d5a9_75662460', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.html");
 }
 /* {block 'content'} */
-class Block_729713467626174f53b5ee9_40464606 extends Smarty_Internal_Block
+class Block_1467467247627ab7cac9d5a9_75662460 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_729713467626174f53b5ee9_40464606',
+    0 => 'Block_1467467247627ab7cac9d5a9_75662460',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -111,9 +111,34 @@ $_smarty_tpl->tpl_vars['tekstBloga']->do_else = false;
     </div>
     <?php
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?> <?php if ($_smarty_tpl->tpl_vars['previous_page']->value > 0) {?>
+    <a
+      type="button"
+      class="pervious"
+      href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+marcysiox/<?php echo $_smarty_tpl->tpl_vars['previous_page']->value;?>
+"
+      >‹</a
+    >
+    <?php }?> <?php if ($_smarty_tpl->tpl_vars['isNextPage']->value) {?>
+    <a
+      type="button"
+      class="next"
+      href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
+marcysiox/<?php echo $_smarty_tpl->tpl_vars['next_page']->value;?>
+"
+      >›</a
+    >
+    <?php }?>
   </div>
 </div>
+<?php echo '<script'; ?>
+>
+  $(document).ready(function () {
+    $("#usersValues").DataTable();
+  });
+<?php echo '</script'; ?>
+>
 <?php
 }
 }
