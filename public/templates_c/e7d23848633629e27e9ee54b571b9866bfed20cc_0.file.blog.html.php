@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-21 18:27:57
+/* Smarty version 4.1.0, created on 2022-05-12 16:32:29
   from 'C:\xampp\htdocs\F1Blog-PHP\app\views\blog.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6261860d5b9a61_84115257',
+  'unifunc' => 'content_627d1a7d461c89_08718715',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e7d23848633629e27e9ee54b571b9866bfed20cc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\F1Blog-PHP\\app\\views\\blog.html',
-      1 => 1650558476,
+      1 => 1652365947,
       2 => 'file',
     ),
   ),
@@ -20,27 +20,65 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6261860d5b9a61_84115257 (Smarty_Internal_Template $_smarty_tpl) {
+function content_627d1a7d461c89_08718715 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18276993696261860d59e7e4_27541609', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1512293382627d1a7d4504e0_47380010', 'content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.html");
 }
 /* {block 'content'} */
-class Block_18276993696261860d59e7e4_27541609 extends Smarty_Internal_Block
+class Block_1512293382627d1a7d4504e0_47380010 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_18276993696261860d59e7e4_27541609',
+    0 => 'Block_1512293382627d1a7d4504e0_47380010',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
+
+
+<?php echo '<script'; ?>
+>
+  tinymce.init({
+    selector: "#mytextarea",
+    plugins: [
+      "a11ychecker",
+      "advlist",
+      "advcode",
+      "advtable",
+      "autolink",
+      "checklist",
+      "export",
+      "lists",
+      "link",
+      "image",
+      "charmap",
+      "preview",
+      "anchor",
+      "searchreplace",
+      "visualblocks",
+      "powerpaste",
+      "fullscreen",
+      "formatpainter",
+      "insertdatetime",
+      "media",
+      "table",
+      "help",
+      "wordcount",
+    ],
+    toolbar:
+      "undo redo | formatpainter casechange blocks | bold italic backcolor | " +
+      "alignleft aligncenter alignright alignjustify | " +
+      "bullist numlist checklist outdent indent | removeformat | a11ycheck code table help",
+  });
+<?php echo '</script'; ?>
+>
 
 <div class="navigation">
   <nav class="nav-items">
@@ -79,9 +117,8 @@ logout">Wyloguj</a></li>
 blog" method="post">
         <div class="input-wpis">
           <textarea
+            id="mytextarea"
             placeholder="Napisz o czym chcesz poinformować fanów..."
-            cols="25"
-            rows="10"
             name="wpis"
           ></textarea>
         </div>

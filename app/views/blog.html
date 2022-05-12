@@ -1,4 +1,40 @@
 {extends file="main.html"} {block name=content}
+
+<script>
+  tinymce.init({
+    selector: "#mytextarea",
+    plugins: [
+      "a11ychecker",
+      "advlist",
+      "advcode",
+      "advtable",
+      "autolink",
+      "checklist",
+      "export",
+      "lists",
+      "link",
+      "image",
+      "charmap",
+      "preview",
+      "anchor",
+      "searchreplace",
+      "visualblocks",
+      "powerpaste",
+      "fullscreen",
+      "formatpainter",
+      "insertdatetime",
+      "media",
+      "table",
+      "help",
+      "wordcount",
+    ],
+    toolbar:
+      "undo redo | formatpainter casechange blocks | bold italic backcolor | " +
+      "alignleft aligncenter alignright alignjustify | " +
+      "bullist numlist checklist outdent indent | removeformat | a11ycheck code table help",
+  });
+</script>
+
 <div class="navigation">
   <nav class="nav-items">
     <div class="logoF1">
@@ -31,9 +67,8 @@
       <form action="{$conf->action_root}blog" method="post">
         <div class="input-wpis">
           <textarea
+            id="mytextarea"
             placeholder="Napisz o czym chcesz poinformować fanów..."
-            cols="25"
-            rows="10"
             name="wpis"
           ></textarea>
         </div>
