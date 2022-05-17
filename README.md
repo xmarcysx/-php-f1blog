@@ -1,8 +1,9 @@
 # F1Blog-PHP 
 <br>
 <h2>This is a project that I've created to pass "Projektowanie aplikacji webowych" at studies</h2>
+<p>Website of the project: <a href="https://marcysiox.000webhostapp.com/F1Blog-PHP/public/"></p>
 <h2>The project was created with: </h2>
-<p>Amelia PHP FrameWork: <a>http://amelia-framework.eu/</a></p>
+<p>Amelia PHP FrameWork: <a href="http://amelia-framework.eu/"></a></p>
 <p>Alertyfy.js: <a>https://alertifyjs.com/</a></p>
 <p>Articles: <a>https://powrotroberta.pl/</a></p>
 <p>Medoo: <a>https://medoo.in/</a></p>
